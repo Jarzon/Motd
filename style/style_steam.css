@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #494449 url(blackboard.png) no-repeat fixed;
+    background-size: cover;
+}
+
+a:link, a:active, a:visited, a:hover {
+    color: #fff;
+}
+
+#content {
+    text-align: center;
+}
+
+#logo {
+    display: inline-block;
+    padding: 0 13px 0 6px;
+    margin: 10px auto;
+    border: #eee solid 5px;
+    color: #eee;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#logo div {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+/* Revest the text to be able to select the last letter */
+#logo div {
+    unicode-bidi:bidi-override;
+    direction:rtl;
+}
+
+/* line-height is a hack to align the last letter with the rest */
+#box-logo div::first-letter {
+    font-size: 60%;
+    vertical-align: top;
+    line-height: 33px;
+}
+
+.headerText {
+    margin: 20px 5px;
+    color: #333;
+    text-shadow: 1px 1px #777, -1px -1px #222;
+    font-size: 30px;
+}
+
+.headerText a {
+    color: #333;
+}
+
+/* Content */
+.box {
+    background: #1b2838;
+    border: #000 solid 2px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    clear: both;
+    text-align: left;
+    background: radial-gradient(farthest-corner at 50% 10%,
+                                rgba(0, 0, 0, 0.4),
+                                rgba(0, 0, 0, 0.8),
+                                rgba(0, 0, 0, 1)),
+    url("geek.jpg") no-repeat center;
+}
+
+h1.rules, h2.rules {
+    margin: 5px;
+    text-align: center;
+    font-size: 26px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+h1.rules {
+    color: #2694e7;
+    text-shadow: 1px 1px #15355e;
+}
+
+h2.rules {
+    color: #60ab3c;
+    text-shadow: 1px 1px #315e23;
+}
+
+ul.rules {
+    margin-left: 25px;
+    font-size: 18px;
+    list-style: none;
+    color: #eee;
+    vertical-align: text-top;
+}
+
+.rules li {
+    margin: 0;
+    padding: 0 0 1px 28px;
+    vertical-align: middle;
+}
+
+.warning {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+}
+
+.scoreboard {
+    width: 100%;
+    color: #aaa;
+}
+
+.me {
+    text-shadow: 0 1px #222, 1px 0 #222, -1px 0 #222, 0 -1px #222, 1px 1px #222, 1px -1px #222, -1px 1px #222, 1px -1px #222;
+    color: #080;
+}
+
+.me a {
+    color: #080;
+}

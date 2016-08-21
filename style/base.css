@@ -1,0 +1,136 @@
+/* CSS Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 95%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+/* CSS Reset */
+
+a:link, a:active, a:visited, a:hover  {
+    text-decoration: none;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-size: cover;
+    font-size: 18px;
+}
+
+/* TODO: make the design responsible */
+#content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 75%;
+    min-width: 560px;
+    height: 90%;
+    padding: 5px;
+}
+
+.headerText {
+    margin: 20px 5px;
+    font-size: 30px;
+}
+
+.clearer {
+    clear: both;
+    border: none;
+    padding: 10px;
+}
+
+.admins {
+    margin: 5px;
+    text-align: center;
+}
+
+.admins img {
+    height: 65px;
+    width: 65px;
+}
+
+*.tooltip img {
+    border: 2px solid #333;
+}
+
+*.tooltip {
+    outline: none;
+}
+
+*.tooltip strong {
+    line-height: 30px;
+}
+
+*.tooltip:hover {
+    text-decoration: none;
+}
+
+*.tooltip:first-child span {
+    z-index: 10;
+    display: none;
+    padding: 14px 15px;
+    margin-top: -16px;
+    margin-left: -93px;
+    width: 300px;
+    line-height: 16px;
+}
+
+*.tooltip span {
+    z-index: 10;
+    display: none;
+    padding: 14px 15px;
+    margin-top: -16px;
+    margin-left: -324px;
+    width: 300px;
+    line-height: 16px;
+}
+
+*.tooltip:first-child span img {
+    float: left;
+}
+
+*.tooltip span img {
+    float: right;
+}
+
+*.tooltip:hover span {
+    display: inline;
+    position: absolute;
+    border: 2px solid #FFF;
+    color: #EEE;
+    background: #333 linear-gradient(#222, #444) repeat-x 0 0;
+    opacity: 0.9;
+}
+
+*.tooltip span
+{
+    border-radius: 4px;
+    /*box-shadow: 0px 0px 8px 4px #666;*/
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
