@@ -22,13 +22,11 @@ addPlayer('Master J', 'MasterJibus', $donators);
 
     <body>
     <div id="content">
-        <div id="logo">
-            <!-- Logo is written in reverse for technical purpose -->
-            <div>evlav</div>
-        </div>
+        <!-- Logo is written in reverse for technical purpose -->
+        <div id="logo">evlav</div>
 
         <div class="box">
-            <h1 class="rules">Server Rules</h1>
+            <h1>Server Rules</h1>
             <ul class="rules">
                 <li>No cheating</li>
                 <li>No mic spam</li>
@@ -40,7 +38,7 @@ addPlayer('Master J', 'MasterJibus', $donators);
                 <a href="./sourcebans">Sourcebans</a>
             </p><br>
 
-            <h2 class="rules">Admins</h2>
+            <h2>Admins</h2>
             <div class="admins">
                 <?php
                     foreach($admins as $player) {
@@ -55,7 +53,7 @@ addPlayer('Master J', 'MasterJibus', $donators);
                 ?>
             </div>
 
-            <h2 class="rules">Donators</h2>
+            <h2>Donators</h2>
             <div class="admins">
                 <?php
                 foreach($donators as $player) {

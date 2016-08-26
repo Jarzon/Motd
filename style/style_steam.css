@@ -13,30 +13,27 @@ a:link, a:active, a:visited, a:hover {
 }
 
 #logo {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #eee;
+
     display: inline-block;
     padding: 0 13px 0 6px;
     margin: 10px auto;
     border: #eee solid 5px;
-    color: #eee;
-    text-align: center;
-    text-transform: uppercase;
-}
 
-#logo div {
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 35px;
-    letter-spacing: 10px;
-}
-
-/* Revest the text to be able to select the last letter */
-#logo div {
-    unicode-bidi:bidi-override;
-    direction:rtl;
+    /* Revest the text to be able to select the last letter */
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
 
 /* line-height is a hack to align the last letter with the rest */
-#box-logo div::first-letter {
+#logo:first-letter {
     font-size: 60%;
     vertical-align: top;
     line-height: 33px;
@@ -62,13 +59,12 @@ a:link, a:active, a:visited, a:hover {
     clear: both;
     text-align: left;
     background: radial-gradient(farthest-corner at 50% 10%,
-                                rgba(0, 0, 0, 0.4),
-                                rgba(0, 0, 0, 0.8),
-                                rgba(0, 0, 0, 1)),
-    url("geek.jpg") no-repeat center;
+    rgba(81, 243, 95, 0.2),
+    rgb(0, 0, 0)),
+    url("use_your_illusion.png") center;
 }
 
-h1.rules, h2.rules {
+h1, h2 {
     margin: 5px;
     text-align: center;
     font-size: 26px;
@@ -76,12 +72,12 @@ h1.rules, h2.rules {
     font-weight: bold;
 }
 
-h1.rules {
+h1 {
     color: #2694e7;
     text-shadow: 1px 1px #15355e;
 }
 
-h2.rules {
+h2 {
     color: #60ab3c;
     text-shadow: 1px 1px #315e23;
 }
@@ -105,18 +101,4 @@ ul.rules {
     top: 50%;
     transform: translateY(-50%);
     font-size: 40px;
-}
-
-.scoreboard {
-    width: 100%;
-    color: #aaa;
-}
-
-.me {
-    text-shadow: 0 1px #222, 1px 0 #222, -1px 0 #222, 0 -1px #222, 1px 1px #222, 1px -1px #222, -1px 1px #222, 1px -1px #222;
-    color: #080;
-}
-
-.me a {
-    color: #080;
 }
