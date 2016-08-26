@@ -23,20 +23,23 @@ a:link, a:active, a:visited, a:hover {
     color: #eee;
 
     display: inline-block;
-    padding: 0 13px 0 6px;
+    padding: 0 10px 0 2px;
     margin: 10px auto;
-    border: #eee solid 5px;
+    border: #eee solid 4px;
+
+    line-height: 34px;
 
     /* Revest the text to be able to select the last letter */
     unicode-bidi: bidi-override;
     direction: rtl;
 }
 
+/* TODO: In firefox the size of the #logo doesnt recompute to fit the text, fix it */
 /* line-height is a hack to align the last letter with the rest */
 #logo:first-letter {
-    font-size: 60%;
+    font-size: 61%;
     vertical-align: top;
-    line-height: 33px;
+    line-height: 24px;
 }
 
 .headerText {
