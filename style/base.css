@@ -27,7 +27,7 @@ body {
     font-size: 18px;
 }
 
-/* TODO: make the design responsible */
+/* TODO: make the design responsive */
 #content {
     position: relative;
     z-index: 1;
@@ -43,6 +43,14 @@ body {
     margin: 20px 5px;
     font-size: 30px;
 }
+
+.box {
+    background: #333;
+    border: #fff solid 2px;
+    padding: 10px 20px;
+    clear: both;
+}
+
 
 .clearer {
     clear: both;
