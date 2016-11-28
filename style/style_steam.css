@@ -29,17 +29,16 @@ a:link, a:active, a:visited, a:hover {
 
     line-height: 34px;
 
-    /* Revest the text to be able to select the last letter */
+    /* A hack to be able to select the last letter */
     unicode-bidi: bidi-override;
     direction: rtl;
 }
 
 /* TODO: In firefox the size of the #logo doesnt recompute to fit the text, fix it */
-/* line-height is a hack to align the last letter with the rest */
 #logo:first-letter {
     font-size: 61%;
     vertical-align: top;
-    line-height: 24px;
+    line-height: 24px; /* A hack to align the last letter with the rest */
 }
 
 .headerText {
@@ -99,9 +98,21 @@ ul.rules {
     vertical-align: middle;
 }
 
+.links {
+    text-align: center;
+    clear: both;
+}
+
 .warning {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     font-size: 40px;
+}
+
+.tooltip:hover span {
+    border: 2px solid #FFF;
+    color: #EEE;
+    background: #333 linear-gradient(#222, #444) repeat-x 0 0;
+    opacity: 0.9;
 }

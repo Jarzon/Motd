@@ -51,7 +51,6 @@ body {
     clear: both;
 }
 
-
 .clearer {
     clear: both;
     border: none;
@@ -68,77 +67,51 @@ body {
     width: 65px;
 }
 
-*.tooltip img {
+.tooltip img {
     border: 2px solid #333;
 }
 
-*.tooltip {
+.tooltip {
     outline: none;
 }
 
-*.tooltip strong {
+.tooltip strong {
     line-height: 30px;
 }
 
-*.tooltip:hover {
+.tooltip:hover {
     text-decoration: none;
 }
 
-*.tooltip:first-child span {
+.tooltip span {
     z-index: 10;
     display: none;
-    padding: 14px 15px;
-    margin-top: -16px;
-    margin-left: -93px;
-    width: 300px;
-    line-height: 16px;
-}
-
-*.tooltip span {
-    z-index: 10;
-    display: none;
-    padding: 14px 15px;
+    padding: 14px 21px;
     margin-top: -16px;
     margin-left: -324px;
     width: 300px;
     line-height: 16px;
+    border-radius: 4px;
 }
 
-*.tooltip:first-child span img {
-    float: left;
-}
-
-*.tooltip span img {
+.tooltip span img {
     float: right;
 }
 
-*.tooltip:hover span {
+/* Place the first tooltip on the right to avoid collision with the side of the screen */
+.tooltip:first-child span {
+    margin-left: -93px;
+}
+
+.tooltip:first-child span img {
+    float: left;
+}
+
+.tooltip:hover span {
     display: inline;
     position: absolute;
     border: 2px solid #FFF;
     color: #EEE;
     background: #333 linear-gradient(#222, #444) repeat-x 0 0;
     opacity: 0.9;
-}
-
-*.tooltip span
-{
-    border-radius: 4px;
-    /*box-shadow: 0px 0px 8px 4px #666;*/
-}
-
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.center {
-    text-align: center;
-}
-
-.clear {
-    clear: both;
 }
