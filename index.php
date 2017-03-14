@@ -37,7 +37,7 @@ addPlayer('Master J', 'MasterJibus', '', $donators);
                 <li>No inappropriate sprays</li>
             </ul><br>
             <p class="links">
-                <a href="http://steamcommunity.com/groups/YoshiYoshiYoshi">Our group page</a> -
+                <a href="http://steamcommunity.com/groups/SteamUniverse">Our group page</a> -
                 <a href="./sourcebans">Sourcebans</a>
             </p><br>
 
