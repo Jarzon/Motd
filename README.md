@@ -2,4 +2,4 @@
 
 Open source Motd for Source games.
 
-[Demo](https://masterj.net/motd/)
+[Demo](https://www.masterj.net/motd/)
