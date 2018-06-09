@@ -1,5 +1,5 @@
 # Jarzon/Motd
 
-Open source Motd for Source games.
+Open source html only Motd for Source games.
 
-[Demo](https://www.masterj.net/motd/)
+[Demo](https://jarzon.github.io/Motd/index.html)
